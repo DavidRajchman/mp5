@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+
+{% if errorx %}
+<h1 style="color: red;">{{ errorx }}</h1>
+{% endif %} 
+
+
+ <h1>Please register</h1>
+
+ <form action="#" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text"  name="rusername"><br>
+    <label for="password">Password:</label><br>
+    <input type="password"  name="rpassword"><br><br>
+    <input type="submit" value="Submit">
+ </form>
+
+{% endblock %}
